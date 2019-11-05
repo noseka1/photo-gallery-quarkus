@@ -133,7 +133,7 @@ Deploy the application:
 oc new-app \
 --image-stream photo-gallery \
 --name photo-gallery \
---env GALLERY_DB_HOST=postgresql
+--env QUARKUS_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/gallery
 ```
 
 Expose the application to the outside world:
