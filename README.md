@@ -109,13 +109,13 @@ oc new-build \
 Correct the Dockerfile location in the build config:
 
 ```
-oc patch bc photo -p '{"spec":{"strategy":{"dockerStrategy":{"dockerfilePath":"src/main/docker/Dockerfile.jvm"}}}}'
+oc patch bc photo-gallery -p '{"spec":{"strategy":{"dockerStrategy":{"dockerfilePath":"src/main/docker/Dockerfile.jvm"}}}}'
 ```
 
 or if you want to build a Docker image for the native executable run this instead:
 
 ```
-oc patch bc photo -p '{"spec":{"strategy":{"dockerStrategy":{"dockerfilePath":"src/main/docker/Dockerfile.native"}}}}'
+oc patch bc photo-gallery -p '{"spec":{"strategy":{"dockerStrategy":{"dockerfilePath":"src/main/docker/Dockerfile.native"}}}}'
 ```
 
 Start the binary build:
