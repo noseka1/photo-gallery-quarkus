@@ -78,7 +78,7 @@ To retrieve all photos from a specific category ordered by the number of likes:
 curl localhost:8080/query?category=animals
 ```
 
-## Deploying on OpenShift
+## Deploying to OpenShift
 
 Create a new project if it doesn't exist:
 
