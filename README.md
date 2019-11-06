@@ -97,7 +97,7 @@ oc new-app \
 --param POSTGRESQL_DATABASE=gallery
 ```
 
-Define a binary build (this will reuse the Go artifacts that were you built at the beginning):
+Define a binary build (this will reuse the jar artifacts that were you built at the beginning):
 
 ```
 oc new-build \
