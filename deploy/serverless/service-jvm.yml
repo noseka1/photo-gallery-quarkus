@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: photo-gallery-quarkus-jvm-serverless
+spec:
+  template:
+    spec:
+      containers:
+        - image: image-registry.openshift-image-registry.svc:5000/photo-gallery-quarkus-jvm/photo-gallery
+          env:
+            - name: QUARKUS_DATASOURCE_URL
+              value: "jdbc:postgresql://postgresql:5432/gallery"
