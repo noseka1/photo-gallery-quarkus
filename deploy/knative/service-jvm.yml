@@ -1,7 +1,7 @@
 apiVersion: serving.knative.dev/v1alpha1
 kind: Service
 metadata:
-  name: photo-gallery-quarkus-jvm-serverless
+  name: photo-gallery-quarkus-jvm-knative
 spec:
   template:
     spec:
